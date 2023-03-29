@@ -136,3 +136,7 @@ export default axios.create({
 ```
 
 with above code, axios will use the above api and baseURL for requests we send.
+
+# Install react icon library
+
+`npm i react-icons@4.7.1`
