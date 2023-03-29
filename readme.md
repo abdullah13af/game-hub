@@ -37,3 +37,35 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 ```
 
 *Delete everything from index.css to avoid the defaul ugly styling from vite*
+
+
+## Creating a responsive layout using Chakra Grid
+the below code will create a responsive layout with a *nav, aside, and main* section
+
+```
+import {Grid, GridItem, Show} from "@chakra-ui/react";
+
+function App() {
+	return (
+		<Grid
+			templateAreas={{
+				base: `"nav" "main"`,
+				lg: `"nav nav" "aside main"`,
+			}}>
+			<GridItem area="nav" bg="coral">
+				Nav
+			</GridItem>
+			<Show above="lg">
+				<GridItem area="aside" bg="gold">
+					Aside
+				</GridItem>
+			</Show>
+			<GridItem area="main" bg="dodgerblue">
+				Main
+			</GridItem>
+		</Grid>
+	);
+}
+
+export default App;
+```
