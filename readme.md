@@ -88,3 +88,23 @@ const NavBar = () => {
 export default NavBar;
 ```
 
+# Implementing the dark mode
+create a *theme.ts* file in the *src* folder and add following code to it
+
+```
+import { extendTheme, ThemeConfig } from "@chakra-ui/react";
+
+const config: ThemeConfig = {
+  initialColorMode: 'dark'
+};
+
+const theme = extendTheme({ config });
+
+export default theme;
+```
+
+then goto the *main.tsx* file and import the theme and in the <ChakraProvider> component,
+add the this attribute `theme={theme}` and add the following code before the <App /> component.
+
+`<ColorModeScript initialColorMode={theme.config.initialColorMode} />`
+
