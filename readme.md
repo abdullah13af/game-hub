@@ -108,3 +108,4 @@ add the this attribute `theme={theme}` and add the following code before the <Ap
 
 `<ColorModeScript initialColorMode={theme.config.initialColorMode} />`
 
+# Building the color mode switch
