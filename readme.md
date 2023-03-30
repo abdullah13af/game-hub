@@ -140,3 +140,17 @@ with above code, axios will use the above api and baseURL for requests we send.
 # Install react icon library
 
 `npm i react-icons@4.7.1`
+
+# Build for Production
+
+`npm run build`
+
+vs code short to build `shift+CMD+P`
+
+# Deploying the project to VERCEL
+
+1. goto [Vercel](https://vercel.com/)
+2. create an account if you don't have already
+3. install vercel cli `npm i -g vercel`
+4. type `vercel` in the terminal
+5. it will ask some questions, you can select default or customize as per your need.
